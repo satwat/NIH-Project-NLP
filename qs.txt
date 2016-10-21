@@ -1,0 +1,202 @@
+Input: Under what circumstances do those with diabetes need to give themselves an insulin injection ?
+Parse:
+need VBP ROOT
+ +-- Under IN prep
+ |   +-- circumstances NNS pobj
+ |       +-- what WDT det
+ +-- do VBP aux
+ +-- those DT nsubj
+ |   +-- with IN prep
+ |       +-- diabetes NNS pobj
+ +-- give VB xcomp
+ |   +-- to TO aux
+ |   +-- themselves PRP iobj
+ |   +-- injection NN dobj
+ |       +-- an DT det
+ |       +-- insulin NN nn
+ +-- ? . punct
+Input: Is diabetes something that can be overcome or when someone has it , do they have it for life ?
+Parse:
+something NN ROOT
+ +-- Is VBZ cop
+ +-- diabetes NNS nsubj
+ +-- overcome VBN rcmod
+ |   +-- that WDT nsubjpass
+ |   +-- can MD aux
+ |   +-- be VB auxpass
+ |   +-- or CC cc
+ |   +-- have VB conj
+ |       +-- has VBZ advcl
+ |       |   +-- when WRB advmod
+ |       |   +-- someone NN nsubj
+ |       |   +-- it PRP dobj
+ |       +-- , , punct
+ |       +-- do VB aux
+ |       +-- they PRP nsubj
+ |       +-- it PRP dobj
+ |       +-- for IN prep
+ |           +-- life NN pobj
+ +-- ? . punct
+Input: What kind of special diet does someone with diabetes need to follow and are there any foods they can not have at all ?
+Parse:
+need VB ROOT
+ +-- kind NN dobj
+ |   +-- What WDT det
+ |   +-- of IN prep
+ |       +-- diet NN pobj
+ |           +-- special JJ amod
+ +-- does VBZ aux
+ +-- someone NN nsubj
+ |   +-- with IN prep
+ |       +-- diabetes NNS pobj
+ +-- follow VB xcomp
+ |   +-- to TO aux
+ +-- and CC cc
+ +-- are VBP conj
+ |   +-- there EX expl
+ |   +-- foods NNS nsubj
+ |       +-- any DT det
+ |       +-- have VB rcmod
+ |           +-- they PRP nsubj
+ |           +-- can MD aux
+ |           +-- not RB neg
+ |           +-- all RB advmod
+ |               +-- at RB advmod
+ +-- ? . punct
+Input: Under what circumstances is a ketogenic diet an effective treatment ?
+Parse:
+treatment NN ROOT
+ +-- Under IN prep
+ |   +-- circumstances NNS pobj
+ |       +-- what WDT det
+ +-- is VBZ cop
+ +-- diet NN nsubj
+ |   +-- a DT det
+ |   +-- ketogenic JJ amod
+ +-- an DT det
+ +-- effective JJ amod
+ +-- ? . punct
+Input: To what extent does it exist on a spectrum , such that people may be classified according to the degree to which they are diabetic , even if they are not diagnosable as diabetic according to present criteria ?
+Parse:
+exist VB ROOT
+ +-- To IN prep
+ |   +-- extent NN pobj
+ |       +-- what WDT det
+ +-- does VBZ aux
+ +-- it PRP nsubj
+ +-- on IN prep
+ |   +-- spectrum NN pobj
+ |       +-- a DT det
+ |       +-- , , punct
+ |       +-- classified VBN dep
+ |           +-- such JJ dep
+ |           +-- that IN mark
+ |           +-- people NNS nsubjpass
+ |           +-- may MD aux
+ |           +-- be VB auxpass
+ |           +-- according VBG prep
+ |               +-- to IN pcomp
+ |                   +-- degree NN pobj
+ |                       +-- the DT det
+ |                       +-- diabetic JJ rcmod
+ |                           +-- to TO prep
+ |                           |   +-- which WDT pobj
+ |                           +-- they PRP nsubj
+ |                           +-- are VBP cop
+ +-- , , punct
+ +-- diagnosable JJ advcl
+ |   +-- even RB advmod
+ |   +-- if IN mark
+ |   +-- they PRP nsubj
+ |   +-- are VBP cop
+ |   +-- not RB neg
+ |   +-- as IN prep
+ |   |   +-- diabetic JJ pobj
+ |   +-- according VBG prep
+ |       +-- to IN pcomp
+ |           +-- criteria NNS pobj
+ |               +-- present JJ amod
+ +-- ? . punct
+Input: Given the role of mitochondrial dysfunction in the pathogenesis of diabetes , what relation might the disease have to other diseases involving mitochondrial dysfunction , such as cancer ?
+Parse:
+have VB ROOT
+ +-- Given VBN prep
+ |   +-- role NN dep
+ |       +-- the DT det
+ |       +-- of IN prep
+ |       |   +-- dysfunction NN pobj
+ |       |       +-- mitochondrial JJ amod
+ |       +-- in IN prep
+ |           +-- pathogenesis NN pobj
+ |               +-- the DT det
+ |               +-- of IN prep
+ |                   +-- diabetes NNS pobj
+ +-- , , punct
+ +-- relation NN dobj
+ |   +-- what WDT det
+ +-- might MD aux
+ +-- disease NN nsubj
+ |   +-- the DT det
+ +-- to IN prep
+ |   +-- diseases NNS pobj
+ |       +-- other JJ amod
+ |       +-- involving VBG partmod
+ |       |   +-- dysfunction NN dobj
+ |       |       +-- mitochondrial JJ amod
+ |       +-- , , punct
+ |       +-- as IN prep
+ |           +-- such JJ mwe
+ |           +-- cancer NN pobj
+ +-- ? . punct
+Input: What are some early symptoms related to diabetes
+Parse:
+What WP ROOT
+ +-- are VBP cop
+ +-- symptoms NNS nsubj
+     +-- some DT det
+     +-- early JJ amod
+     +-- related VBN partmod
+         +-- to IN prep
+             +-- diabetes NN pobj
+Input: How can one contract diabetes so late in life ?
+Parse:
+contract NN ROOT
+ +-- How WRB advmod
+ +-- can MD aux
+ +-- one PRP nsubj
+ +-- diabetes NN dobj
+ +-- late RB advmod
+ |   +-- so RB advmod
+ |   +-- in IN prep
+ |       +-- life NN pobj
+ +-- ? . punct
+Input: Does eating a lot of sweets cause diabetes ?
+Parse:
+eating VBG ROOT
+ +-- Does VBZ aux
+ +-- lot NN dobj
+ |   +-- a DT det
+ |   +-- of IN prep
+ |       +-- diabetes NN pobj
+ |           +-- cause NN nn
+ |               +-- sweets NNS nn
+ +-- ? . punct
+Input: What specifically causes Type 1 diabetes ?
+Parse:
+causes VBZ ROOT
+ +-- What WP nsubj
+ +-- specifically RB advmod
+ +-- diabetes NN dobj
+ |   +-- Type NN nn
+ |       +-- 1 CD num
+ +-- ? . punct
+Input: Is Type 1 diabetes preventable at all ?
+Parse:
+preventable JJ ROOT
+ +-- Is VBZ cop
+ +-- diabetes NN nsubj
+ |   +-- Type NN nn
+ |       +-- 1 CD num
+ +-- all RB advmod
+ |   +-- at IN advmod
+ +-- ? . punct
